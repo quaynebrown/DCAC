@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar/Navbar';
-import { HeaderArea, HeaderContent, LearnMore } from './Header.elements'
+import { HeaderArea, HeaderContent } from './Header.elements';
+import LearnMore from '../GlobalComponents/LearnMore'
 
 const Header = () => {
     
@@ -9,11 +10,13 @@ const Header = () => {
             <Navbar />
 
             <HeaderContent>
-                <h1>We create websites</h1>
-                <h2>That works!</h2>
+                <hgroup>
+                    <h1>We create websites</h1>
+                    <h2>That works!</h2>
+                </hgroup>
             </HeaderContent>
 
-            <LearnMore>
+            <LearnMore color="#fff">
                 <a href="#">Learn More</a>
             </LearnMore>
 

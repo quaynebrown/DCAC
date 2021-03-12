@@ -9,15 +9,20 @@ export const Nav = styled.nav`
     }
 
     a{
-        padding: 10px 15px;
+        padding: 10px 20px;
         text-transform: uppercase;
         text-decoration: none;
+        letter-spacing: 0.2rem;
         color: inherit;
+        font-size: 1.4rem;
     }
 
     .logo{
         align-self: center;
         padding-left: 15px;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin: 0;
     }
 `
 

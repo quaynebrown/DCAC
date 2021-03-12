@@ -33,16 +33,20 @@ const GlobalStyle = createGlobalStyle`
     h2{
         font-family: 'Noto Serif', serif;
         font-size: 5rem;
-        margin: 0 0 30px 0
+        text-transform: capitalize;
+        margin: 0 0 30px 0;
     }
 
     h3{
-        color: #b89840;
         order: -1;
-        text-transform: uppercase;
         letter-spacing: 0.5rem;
         font-weight: 200;
         margin: 10px;
+    }
+
+    h3, h4{
+        color: #b89840;
+        text-transform: uppercase;
     }
 
     section{

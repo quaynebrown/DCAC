@@ -9,7 +9,7 @@ const LearnMore = (props) => {
 
     useEffect(() => {
         setColor(props.color)
-    }, []);
+    }, [props.color]);
 
     const LearnMoreStyled = styled.div`
     display: flex;

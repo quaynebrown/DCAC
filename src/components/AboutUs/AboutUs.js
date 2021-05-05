@@ -5,7 +5,7 @@ import aboutImage from '../../assets/misionImg.jpg';
 
 const AboutUs = () => {
     return (
-        <section>
+        <section id="about-us">
             <AboutWrapper>
                 <hgroup>
                     <h2>About Us</h2>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                 </AboutContent>
 
                 <LearnMore color="#000">
-                    <a href="#">Learn more about us</a>
+                    <a href="#mission">Learn more about us</a>
                 </LearnMore>
             </AboutWrapper>
         </section>

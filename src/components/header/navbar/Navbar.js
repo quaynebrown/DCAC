@@ -1,6 +1,6 @@
 import React from 'react'
 import NavLinks from './NavLinks'
-import { Nav, NavbarContainer } from './Navbar.elements'
+import { Nav, NavbarContainer, HamburgerBtn } from './Navbar.elements'
 
 const Navbar = () => {
     return (
@@ -11,6 +11,7 @@ const Navbar = () => {
                 </p>
                 <NavLinks />
             </NavbarContainer>
+            <HamburgerBtn /> 
         </Nav>
     )
 }

@@ -17,6 +17,16 @@ const GlobalStyle = createGlobalStyle`
         line-height: 3.5rem;
     }
 
+    a{
+        color:inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:active{
+            color: #b89840;
+        }
+    }
+
     hgroup{
         text-align: center;
         display: flex;
@@ -26,8 +36,9 @@ const GlobalStyle = createGlobalStyle`
 
     h1{
         text-transform: uppercase;
-        letter-spacing: 1rem;
-        margin-bottom: 0;
+        letter-spacing: 0.5rem;
+        text-shadow: 2px 2px black;
+        /* margin-bottom: 0; */
     }
 
     h2{
@@ -39,7 +50,7 @@ const GlobalStyle = createGlobalStyle`
 
     h3{
         order: -1;
-        letter-spacing: 0.5rem;
+        
         font-weight: 200;
         margin: 10px;
     }
@@ -47,6 +58,7 @@ const GlobalStyle = createGlobalStyle`
     h3, h4{
         color: #b89840;
         text-transform: uppercase;
+        letter-spacing: 0.5rem;
     }
 
     section{
@@ -60,5 +72,9 @@ export const Container = styled.div`
     margin: 0 auto;
     padding: 0 20px;
 `
+
+export const Colors = {
+    primaryAccent: '#b89840'
+}
 
 export default GlobalStyle;

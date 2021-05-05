@@ -18,10 +18,10 @@ function App() {
 
         {/* MAIN START HERE */}
         <main>
-          <AboutUs/>
-          <Mission />
-          <Tutoring />
-          <ContactUs />
+          <AboutUs id="about-us"/>
+        <Mission id="mission"/>
+          <Tutoring id="tutoring"/>
+          <ContactUs id="contact"/>
         </main>
         {/* MAIN ENDS HERE */}
 

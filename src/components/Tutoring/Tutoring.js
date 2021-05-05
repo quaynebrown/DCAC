@@ -1,9 +1,10 @@
 import React from 'react';
-import { TutoringSection, TutoringWrapper, TutoringContent } from './Tutoring.elements'
+import { TutoringSection, TutoringWrapper, TutoringContent } from './Tutoring.elements';
+import { EntypoClock, EntypoCredit, EntypoOpenBook, EntypoLaptop } from 'react-entypo-icons';
 
 const Tutoring = () => {
     return (
-        <TutoringSection>
+        <TutoringSection id="tutoring">
             <TutoringWrapper>
                 <hgroup>
                     <h2>Tutoring and mentorship</h2>
@@ -12,7 +13,10 @@ const Tutoring = () => {
 
                 <TutoringContent>
                     <article>
-                        <h4>Elementary level subjects includes</h4>
+                        <hgroup>
+                            <h3><EntypoOpenBook/></h3>
+                            <h4>Elementary level</h4>
+                        </hgroup>
                         <ul>
                             <li>Mathematics</li>
                             <li>English</li>
@@ -22,19 +26,32 @@ const Tutoring = () => {
                         </ul>
                     </article>
                     <article>
-                        <h4>Secondary level</h4>
+                        <hgroup>
+                            <h3><EntypoLaptop/></h3>
+                            <h4>Secondary level</h4>
+                        </hgroup>
                         <ul>
                             <li>Homework assistance in any subject area</li>
                         </ul>
                     </article>
                     <article>
-                        <h4>Cost</h4>
-                        <p>$55 per month</p>
-                        <p>Subsidy available upon request</p>
+                        <hgroup>
+                            <h3><EntypoCredit/></h3>
+                            <h4>Cost</h4>
+                        </hgroup>
+                        <ul>
+                            <li>$55 per month</li>
+                            <li>Subsidy available upon request</li>
+                        </ul>                       
                     </article>
                     <article>
-                        <h4>When</h4>
-                        <p>Saturdays 9:30 am - 12:30 pm</p>
+                        <hgroup>
+                            <h3><EntypoClock /></h3>
+                            <h4>When</h4>
+                        </hgroup>
+                        <ul>
+                            <li>Saturdays 9:30 am - 12:30 pm</li>
+                        </ul>                        
                     </article>
                 </TutoringContent>
 

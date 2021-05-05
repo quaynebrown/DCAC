@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 import { Container } from '../../GlobalStyles';
+import BgImage from '../../assets/header-bg.jpg'
 
 
-export const HeaderArea = styled.header`
-    background-color: #100804;
+export const HeaderArea = styled.header` 
+    /* radial-gradient(circle, rgba(0,0,0,0.829551889115021) 5%, rgba(89,78,76,0) 60%), */
+    background: url(${BgImage});
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #fff;
     height: 100vh;
     padding: 20px 0 50px 0;
@@ -12,11 +18,16 @@ export const HeaderArea = styled.header`
     justify-content: space-between;
 
     h2{
-        font-size: 12rem;
+        font-size: 3rem;
         font-weight:200;
         color: #b89840;
-        margin-top: 0px;
+        /* margin-top: 0px; */
         text-transform: capitalize;
+    }
+    @media (max-width: 890px){
+        &{
+            padding: 0;
+        }
     }
 `
 
@@ -24,6 +35,7 @@ export const HeaderContent = styled(Container)`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(0,0,0, 0.8);
 
     ${Container}
 `

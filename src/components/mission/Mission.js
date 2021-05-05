@@ -3,7 +3,7 @@ import { MissionAndMandate, MissionWrapper } from './Mission.elements';
 
 const Mission = () => {
     return (
-        <MissionAndMandate>
+        <MissionAndMandate id="mission">
             <MissionWrapper>
                 <article>
                     <hgroup>

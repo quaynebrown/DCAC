@@ -18,11 +18,26 @@ export const TutoringContent = styled.div`
     color: #fff;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    h3{
+        font-size: 5rem;
+        color: #fff;
+    }
+
+    h4{
+        margin:0;
+    }
 
     article{
-        padding: 0 20px;
-        flex-basis: 50%;
+        padding: 20px;
+        flex-basis: 24%;
         border: 1px solid lightgray;
+        min-width: 254px;
+        margin-bottom: 20px;
+    }
+
+    li, p{
+        color: #BABABA;
     }
 `

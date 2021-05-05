@@ -3,8 +3,24 @@ import { Container } from '../../GlobalStyles';
 
 
 
+
 export const ContactWrapper = styled(Container)`
     ${Container};
+`;
+
+export const ContactInformation = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+`;
+
+// TODO: Trying to use Entypo icon in before pseudo class on a <a> tag
+export const ContactLink = styled.a`
+    &::before{
+        content:'';
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 `
 
 export const Form = styled.form`
@@ -34,6 +50,5 @@ export const Form = styled.form`
     input, textarea{
         border: 1px solid lightgray;
         padding: 10px;
-        border-radius: 4px;
     }
 `
